@@ -43,7 +43,8 @@ const App = () => {
           I am {userInfo.age} years old, and I {userInfo.hasPets ? 'have' : 'do not have'} pets.</p>
       </div>
       <div>
-        <button onClick={}>Dark Mode</button>
+        <button onClick={handleDarkMode}>Dark Mode</button>
+        <button onClick={handleLightMode}>Light Mode</button>
 
       </div>
     </>
