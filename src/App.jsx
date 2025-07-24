@@ -24,10 +24,21 @@ const App = () => {
   console.log(isDarkMode);
   console.log(userInfo);
 
+  const handleDarkMode = () => {
+    // TODO: implement the logic to handle user clicking dark mode button
+    console.log('Dark mode is working!');
+  }
+
+  const handleLightMode = () => {
+    // TODO: implement the logic to handle user clicking light mode button
+    console.log('Light mode is working!');
+  }
+
   return (
+    // ternary operator below
     <div className={isDarkMode ? 'dark' : 'light'} >
       <h1>Hello world!</h1>
-      <p>Hello, my name is {userInfo.firstName} {userInfo.lastName}, 
+      <p>Hello, my name is {userInfo.firstName} {userInfo.lastName},
         I am {userInfo.age} years old, and I {userInfo.hasPets ? 'have' : 'do not have'} pets.</p>
     </div>
   );
