@@ -35,12 +35,18 @@ const App = () => {
   }
 
   return (
+    <>
     // ternary operator below
-    <div className={isDarkMode ? 'dark' : 'light'} >
-      <h1>Hello world!</h1>
-      <p>Hello, my name is {userInfo.firstName} {userInfo.lastName},
-        I am {userInfo.age} years old, and I {userInfo.hasPets ? 'have' : 'do not have'} pets.</p>
-    </div>
+      <div className={isDarkMode ? 'dark' : 'light'} >
+        <h1>Hello world!</h1>
+        <p>Hello, my name is {userInfo.firstName} {userInfo.lastName},
+          I am {userInfo.age} years old, and I {userInfo.hasPets ? 'have' : 'do not have'} pets.</p>
+      </div>
+      <div>
+        <button onClick={}>Dark Mode</button>
+
+      </div>
+    </>
   );
 };
 
