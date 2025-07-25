@@ -1,3 +1,4 @@
+/* Light / Dark Mode CSS */
 .light {
   background-color: #ffffff; /* white background */
   color: #333333; /* darker text for contrast */
@@ -10,4 +11,4 @@
   color: #ecf0f1; /* light text for contrast */
   border-color: #34495e; /* slightly darker border for depth */
   font-family: 'Arial', sans-serif;
-}
+} 
