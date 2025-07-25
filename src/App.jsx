@@ -25,13 +25,13 @@ const App = () => {
   console.log(userInfo);
 
   const handleDarkMode = () => {
-    // TODO: implement the logic to handle user clicking dark mode button
     console.log('Dark mode is working!');
+    setIsDarkMode(true);
   }
 
   const handleLightMode = () => {
-    // TODO: implement the logic to handle user clicking light mode button
     console.log('Light mode is working!');
+    setIsDarkMode(false);
   }
 
   return (
