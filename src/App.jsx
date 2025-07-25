@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <>
-    // ternary operator below
+      {/* ternary operator below */}
       <div className={isDarkMode ? 'dark' : 'light'} >
         <h1>Hello world!</h1>
         <p>Hello, my name is {userInfo.firstName} {userInfo.lastName},
