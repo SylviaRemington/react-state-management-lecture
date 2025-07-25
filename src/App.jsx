@@ -25,10 +25,10 @@ const App = () => {
   console.log(userInfo);
 
   const handleDarkMode = () => {
-    console.log('before setIsDarkMode is called' , isDarkMode);
+    console.log('before setIsDarkMode is called', isDarkMode);
     console.log('Dark mode is working!');
     setIsDarkMode(true);
-    console.log('after setIsDarkMode is called' , isDarkMode);
+    console.log('after setIsDarkMode is called', isDarkMode);
   }
 
   const handleLightMode = () => {
@@ -55,4 +55,53 @@ const App = () => {
 
 export default App;
 
+
+/*
+Addtl code for Refactoring State:
+
+const [mode, setMode] = useState('light');
+
+const handleMode = (modeValue) => {
+  console.log(modeValue);
+  setMode(modeValue);
+  
+  <div>
+      <button onClick={() => handleMode('dark')}>Dark Mode</button>
+      <button onClick={() => handleMode('light')}>Light Mode</button>
+    </div>
+
+
+      <div className={mode}>
+        <h1>Hello world!</h1>
+      </div>
+
+
+  import { useState } from 'react';
+  import './App.css';
+
+  const App = () => {
+    const [mode, setMode] = useState('light');
+
+    const handleMode = (modeValue) => {
+      setMode(modeValue);
+    };
+
+    return (
+      <>
+        <div className={mode}>
+          <h1>Hello world!</h1>
+        </div>
+        <div>
+          <button onClick={() => handleMode('dark')}>Dark Mode</button>
+          <button onClick={() => handleMode('light')}>Light Mode</button>
+        </div>
+      </>
+    );
+  };
+
+  export default App;
+
+};
+
+*/
 
