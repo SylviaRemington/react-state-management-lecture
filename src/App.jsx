@@ -74,7 +74,8 @@ const handleMode = (modeValue) => {
       <div className={mode}>
         <h1>Hello world!</h1>
       </div>
-
+-----------------------------------------------------------------------
+Full code once have refactoring state added:
 
   import { useState } from 'react';
   import './App.css';
