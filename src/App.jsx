@@ -25,8 +25,10 @@ const App = () => {
   console.log(userInfo);
 
   const handleDarkMode = () => {
+    console.log('before setIsDarkMode is called' , isDarkMode);
     console.log('Dark mode is working!');
     setIsDarkMode(true);
+    console.log('after setIsDarkMode is called' , isDarkMode);
   }
 
   const handleLightMode = () => {
