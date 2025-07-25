@@ -7,7 +7,7 @@ const App = () => {
   // useState() is invoking the useState function & helping us get our return values.
   // useState() returns an array & pulls out the 2 variables of that array in its corresponding positions.
   // Can pass an argument to useState.
-  // ! need to initialize dark mode to a value, which now is false.
+  // Need to initialize dark mode to a value, which now is false.
   // Thus, updating the initial state value to `false` below.
   // The 'false' part is an optional initial state or the state variable.
 
